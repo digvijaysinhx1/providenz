@@ -1,0 +1,53 @@
+Typical work a creative web agency does:
+
+• Brand identity (logo, color system, typography)
+• High-end website UI design
+• Custom animations and interactions
+• UX strategy (how users move through the site)
+• Visual storytelling for the brand
+• Marketing-focused landing pages
+• Sometimes 3D, motion graphics, WebGL, etc.
+
+Think of the difference like this:
+
+A normal website agency builds a restaurant website with menu, contact page, gallery.
+
+A creative web agency builds a site where
+the hero section animates, the story scrolls visually, the typography feels premium, and the brand feels like an experience.
+
+Companies hire them when they want brand impact, not just an online presence.
+
+Example tools creative agencies often use:
+
+Webflow
+
+Framer
+
+Figma
+
+Three.js
+
+
+
+
+
+
+
+https://kanso.framer.media/
+
+https://launchfolio.framer.website/?utm_source=framer 
+(hero section, "Design" that 
+delivers results.
+and "design" flips and gets "Development")
+(footer also)
+
+
+
+
+https://palmer-template.framer.website/
+on scroll effects 
+
+
+
+https://nakula.framer.website/?utm_source=framer
+horizontal scrolling
