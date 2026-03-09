@@ -1,15 +1,248 @@
 @import "tailwindcss";
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
-  background-color: #222;
+html,
+body {
+  font-family: var(--font-body);
+  background-color: #090909;
   color: #f9f9f9;
   scroll-behavior: smooth;
+}
+
+body{
+  background: #000;
+}
+
+
+
+/* ───── SATOSHI (HEADINGS) ───── */
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/src/assets/fonts/Satoshi-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/src/assets/fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/src/assets/fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+
+/* ───── INTER (BODY TEXT) ───── */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter-SemiBold.otf") format("opentype");
+  font-weight: 600;
+}
+
+
+/* ───────────────── DESIGN TOKENS ───────────────── */
+
+:root {
+
+  --font-heading: "Satoshi", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Colors */
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --text-color: #111111;
+  --text-muted: #6b7280;
+
+  /* Fonts */
+  --font-heading: 'Satoshi', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Heading Sizes */
+  --h1: 80px;
+  --h2: 56px;
+  --h3: 40px;
+  --h4: 28px;
+  --h5: 22px;
+  --h6: 18px;
+
+  /* Text Sizes */
+  --text-lg: 18px;
+  --text-md: 16px;
+  --text-sm: 14px;
+
+  /* Font Weights */
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --xbold: 800;
+
+}
+
+
+/* ───────────────── BASE TEXT ───────────────── */
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+}
+
+p {
+  font-size: var(--text-md);
+  font-weight: var(--regular);
+  line-height: 1.7;
+  letter-spacing: -0.2px;
+}
+
+span {
+  font-family: var(--font-body);
+}
+
+small {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+
+/* ───────────────── HEADINGS ───────────────── */
+
+.heading1 {
+  font-family: var(--font-heading);
+  font-size: var(--h1);
+  font-weight: var(--bold);
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.heading2 {
+  font-family: var(--font-heading);
+  font-size: var(--h2);
+  font-weight: var(--semibold);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+}
+
+.heading3 {
+  font-family: var(--font-heading);
+  font-size: var(--h3);
+  font-weight: var(--semibold);
+  line-height: 1.2;
+}
+
+.heading4 {
+  font-family: var(--font-heading);
+  font-size: var(--h4);
+  font-weight: var(--medium);
+  line-height: 1.3;
+}
+
+.heading5 {
+  font-family: var(--font-heading);
+  font-size: var(--h5);
+  font-weight: var(--medium);
+}
+
+.heading6 {
+  font-family: var(--font-heading);
+  font-size: var(--h6);
+  font-weight: var(--medium);
+}
+
+
+.heading1,
+.heading2,
+.heading3 {
+  font-family: var(--font-heading);
+}
+
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+/* .navbar{
+  padding-block: 8px;
+  padding-inline: 4PX;
+} */
+
+
+a {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+header {
+background: linear-gradient(
+  180deg,
+  rgb(10, 10, 10) 0%,
+  rgba(10, 10, 10, 0.7) 57%,
+  rgba(10, 10, 10, 0) 100%
+);
+}
+
+.hamburger span {
+  height: 2px;
+  width: 20px;
+  background: white;
+}
+
+.hamburger {
+  border: 1px solid #2E2E2E;
+  border-radius: 24px;
+  padding: 16px 12px;
+}
+
+.hero-heading h1{
+  font-size: 70px;
+}
+
+.hero-sub-heading p{
+  max-width: 470px;
+}
+
+.solid-dot{
+  	box-shadow: 0 0 10px 1px #7bf1a7
+}
+
+
+@media (min-width: 768px) {
+  .hero-heading h1{
+    font-size: 80px;
+  }
+ }
+
+/* Small laptop */
+@media (min-width: 1024px) {
+    .hero-heading h1{
+    font-size: 90px;
+  }
+ }
+
+/* Desktop */
+@media (min-width: 1280px) { 
+      .hero-heading h1{
+    font-size: 99px;
+  }
 }
