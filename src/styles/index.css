@@ -71,7 +71,7 @@ body{
   /* Colors */
   --primary-color: #000000;
   --secondary-color: #ffffff;
-  --text-color: #111111;
+  --text-color: #ffffff;
   --text-muted: #6b7280;
 
   /* Fonts */
@@ -99,6 +99,8 @@ body{
   --xbold: 800;
 
 }
+
+
 
 
 /* ───────────────── BASE TEXT ───────────────── */
@@ -227,9 +229,48 @@ background: linear-gradient(
 }
 
 
+/* about section  */
+
+
+
+.small{
+  font-size: var(--text-sm);
+  font-weight: var(--regular);
+  color: var(--text-color);
+}
+
+.about-para p{
+font-size: 55px;
+    line-height: 57px; 
+    font-weight: var(--medium);
+    /* line-height: 102px; */
+    letter-spacing: -5px;
+    /* letter-spacing: -10px; */
+    color: #ffffff;
+    
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+.char, .word {
+  will-change: opacity;
+  transform: translateZ(0); /* force GPU layer */
+  -webkit-font-smoothing: antialiased;
+}
+
 @media (min-width: 768px) {
   .hero-heading h1{
     font-size: 80px;
+  }
+
+  .about-para p{
+        font-size: 75px;
+        line-height: 75px;
+        color: #ffffff14;
   }
  }
 
@@ -238,11 +279,23 @@ background: linear-gradient(
     .hero-heading h1{
     font-size: 90px;
   }
+
+  .about-para P{
+            font-size: 70px;
+        line-height: 90px;
+        color: #ffffff14;
+  }
  }
 
 /* Desktop */
 @media (min-width: 1280px) { 
       .hero-heading h1{
     font-size: 99px;
+  }
+
+  .about-para p{
+            font-size: 100px;
+        line-height: 120px;
+        color: #ffffff14;
   }
 }

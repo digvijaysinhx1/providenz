@@ -49,13 +49,16 @@ const Hero = () => {
 
         {/* content */}
 
-        <div className="hero-wrapper relative pt-18 h-screen px-2 flex flex-col md:justify-center items-start justify-between">
+        <div className="hero-wrapper pb-37 relative pt-18 h-screen px-2 flex flex-col md:justify-center items-start justify-between">
           <div className="available md:hidden flex items-center justify-center flex-row gap-3"> 
             <div className="relative flex items-center justify-center">
                 <span className="absolute inline-flex h-4 w-4 rounded-full bg-green-400 opacity-75 animate-ping"></span>
                 <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500 solid-dot"></span>
+            </div> 
+            <p>
+            Available for Project
+            </p>
             </div>
-            Available for Project</div>
           <div className="hero-content-cta flex flex-col items-start gap-6 md:gap-10">
             <div className="hero-content flex flex-col gap-2 md:gap-4">
               <div className="hero-heading">
@@ -75,7 +78,7 @@ const Hero = () => {
                         stage === "exit"
                           ? "translateY(-20px)" // exits upward
                           : stage === "enter"
-                            ? "translateY(20px)" // starts from below
+                            ? "translateY(70px)" // starts from below
                             : "translateY(0)", // rests in place
                     }}
                   >
