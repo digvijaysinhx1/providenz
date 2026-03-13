@@ -240,11 +240,11 @@ background: linear-gradient(
 }
 
 .about-para p{
-font-size: 55px;
-    line-height: 57px; 
+font-size: 30px;
+    line-height: 30px; 
     font-weight: var(--medium);
     /* line-height: 102px; */
-    letter-spacing: -5px;
+    letter-spacing: -2px;
     /* letter-spacing: -10px; */
     color: #ffffff;
     
@@ -262,14 +262,42 @@ font-size: 55px;
   -webkit-font-smoothing: antialiased;
 }
 
+
+/* services section */
+.service-heading h3{
+  font-size: 30px;
+      transition: all 500ms ease;
+}
+
+
+
+.group{
+    padding: 20px 10px;
+    border-top: 1px solid #1E1E1E;
+    border-bottom: 1px solid #1E1E1E;
+    transition: all 300ms ease-in-out;
+}
+
+
+
+.group:hover{
+  background: #181818;
+}
+
+.group:hover h3{
+  font-size: 50px; 
+}
+
+
+
 @media (min-width: 768px) {
   .hero-heading h1{
     font-size: 80px;
   }
 
   .about-para p{
-        font-size: 75px;
-        line-height: 75px;
+        font-size: 65px;
+        line-height: 65px;
         color: #ffffff14;
   }
  }
@@ -281,8 +309,8 @@ font-size: 55px;
   }
 
   .about-para P{
-            font-size: 70px;
-        line-height: 90px;
+            font-size: 60px;
+        line-height: 60px;
         color: #ffffff14;
   }
  }
@@ -294,8 +322,8 @@ font-size: 55px;
   }
 
   .about-para p{
-            font-size: 100px;
-        line-height: 120px;
+            font-size: 80px;
+        line-height: 100px;
         color: #ffffff14;
   }
 }

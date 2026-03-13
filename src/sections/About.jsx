@@ -13,7 +13,7 @@ const About = () => {
   const cubeRef = useRef();
 
   useGSAP(() => {
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 600;
 
     // ✅ text animation — desktop only
     if (!isMobile) {
