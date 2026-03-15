@@ -7,6 +7,8 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Process from './sections/Process'
 import Services from './sections/Services'
+import CTA from './sections/CTA'
+import Footer from './components/layout/Footer'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -43,6 +45,8 @@ const App = () => {
       <About />
       <Services/>
       <Process />
+      <CTA />
+      <Footer />
     </>
   )
 }

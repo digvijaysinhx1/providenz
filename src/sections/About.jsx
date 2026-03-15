@@ -62,7 +62,7 @@ const About = () => {
   }, { scope: container });
 
   return (
-    <div className='about' ref={container} style={{ position: 'relative', overflow: 'hidden' }}>
+    <div id='about' className='about' ref={container} style={{ position: 'relative', overflow: 'hidden' }}>
 
       {/* Cube */}
       <div

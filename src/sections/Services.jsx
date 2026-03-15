@@ -8,7 +8,7 @@ const Services = () => {
   };
 
   return (
-    <div className="services">
+    <div id="services" className="services">
       <div className="container">
         <div className="services-wrapper overflow-hidden cursor-default px-2 gap-14 py-37 flex flex-col items-center justify-center">
           {/* heading */}

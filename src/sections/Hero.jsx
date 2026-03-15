@@ -29,7 +29,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="hero relative h-screen text-[#f1f1f1] bg-[#0D0D0D] overflow-hidden">
+    <div id="/" className="hero relative h-screen text-[#f1f1f1] bg-[#0D0D0D] overflow-hidden">
       <div className="container">
         {/* video */}
         <div className="absolute inset-0">
@@ -90,7 +90,7 @@ const Hero = () => {
                 <p>We design and build modern websites that help brands stand out and grow online.</p>
               </div>
             </div>
-            <div className="hero-cta"><StartProject/></div>
+            <div className="hero-cta"><StartProject link="#cta" text="START A PROJECT"/></div>
           </div>
         </div>
       </div>

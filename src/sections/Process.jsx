@@ -53,7 +53,7 @@ const Process = () => {
           scrollTrigger: {
             trigger: section,
             start: "top 0",
-            end: "top 40%",
+            end: "top -40%",
             pin: true,
             scrub: 2,
             anticipatePin: 2,
@@ -73,7 +73,7 @@ const Process = () => {
   );
 
   return (
-    <section ref={sectionRef} className="process-section">
+    <section ref={sectionRef} id="services" className="process-section">
       {/*
         Single flex-row track that contains BOTH the heading column
         AND all 4 card columns. The whole strip scrolls together.

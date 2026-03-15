@@ -1,10 +1,10 @@
 import React from "react";
 import arrow from "../../assets/svg/arrow-up-right.svg";
 
-const StartProject = () => {
+const StartProject = (props) => {
   return (
-    <a href="#" className="bg-[#220F0D] transition-all ease-in-out duration-200 hover:bg-[#FF4925] hover:text-black border border-[#FF4925] text-[#FF4925] flex items-center justify-between px-2 py-4 gap-3 rounded-2xl  w-fit">
-      START A PROJECT{" "}
+    <a href={props.link} className="bg-[#220F0D] transition-all ease-in-out duration-200 hover:bg-[#FF4925] hover:text-black border border-[#FF4925] text-[#FF4925] flex items-center justify-between px-2 py-4 gap-3 rounded-2xl  w-fit">
+      {props.text}{" "}
       <svg
         width="20px"
         height="20px"
