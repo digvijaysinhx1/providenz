@@ -58,7 +58,7 @@ const Process = () => {
             scrub: 2,
             anticipatePin: 2,
             invalidateOnRefresh: true,
-            markers: true,
+            // markers: true,
           },
         });
 
