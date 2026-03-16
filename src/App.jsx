@@ -9,6 +9,7 @@ import Process from './sections/Process'
 import Services from './sections/Services'
 import CTA from './sections/CTA'
 import Footer from './components/layout/Footer'
+import { Analytics } from '@vercel/analytics/react';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -47,6 +48,7 @@ const App = () => {
       <Process />
       <CTA />
       <Footer />
+      <Analytics />
     </>
   )
 }
