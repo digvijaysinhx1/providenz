@@ -31,11 +31,12 @@ const Footer = () => {
       <div className="container">
         <div className="footer-wrapper">
           <div className="footer-center">
-            <div className="footer-logo-container" style={{ overflow: 'hidden' }}>
+            <div className="footer-logo-container">
               <h2 ref={logoRef} className="heading2 footer-logo">
                 PROVIDENZ<span className="footer-trademark">®</span>
               </h2>
             </div>
+            
           </div>
         </div>
       </div>

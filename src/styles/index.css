@@ -133,7 +133,7 @@ small {
   font-family: var(--font-heading);
   font-size: var(--h1);
   font-weight: var(--bold);
-  line-height: 1.1;
+  line-height: 1;
   letter-spacing: -2px;
 }
 
@@ -570,46 +570,48 @@ font-size: 30px;
 .footer {
   background: #ff4925;
   color: #000;
-  padding-block: 80px 40px;
   position: relative;
   overflow: hidden;
 }
 
 .footer-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-inline: 20px;
+    padding: 148px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer-logo {
   font-family: var(--font-heading);
-  font-size: clamp(60px, 17vw, 350px);
+  font-size: clamp(60px, 16vw, 350px);
   font-weight: 800;
-  line-height: 0.8;
+  line-height: 1;
   letter-spacing: -6px;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   text-transform: uppercase;
+  /* padding-top: 20px;
+  padding-right: 20px; */
+}
+
+.footer-logo-container h2{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
 }
 
 .footer-trademark {
-  font-size: 0.2em;
+  font-size: 0.22em;
   font-weight: 700;
-  margin-top: 0.25em;
-  margin-left: 5px;
+  /* margin-top: 0.1em; */
+  /* margin-left: 10px; */
 }
 
 @media (min-width: 1024px) {
-  .footer {
-    padding-block: 160px;
-  }
-
-  .footer-wrapper {
-    padding-inline: 48px;
-  }
 
   .footer-logo {
     letter-spacing: -12px;
