@@ -3,7 +3,7 @@ import StartProject from '../components/ui/StartProject';
 
 const CTA = () => {
   return (
-    <section id='cta' className="cta-section">
+    <section id='contact' className="cta-section">
       <div className="container">
         <div className="cta-wrapper">
           <div className="cta-left">

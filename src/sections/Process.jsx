@@ -73,7 +73,7 @@ const Process = () => {
   );
 
   return (
-    <section ref={sectionRef} id="services" className="process-section">
+    <section ref={sectionRef} id="process" className="process-section">
       {/*
         Single flex-row track that contains BOTH the heading column
         AND all 4 card columns. The whole strip scrolls together.
