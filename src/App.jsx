@@ -10,6 +10,7 @@ import Services from './sections/Services'
 import CTA from './sections/CTA'
 import Footer from './components/layout/Footer'
 import { Analytics } from '@vercel/analytics/react';
+import CustomCursor from './components/ui/CustomCursor'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -41,6 +42,7 @@ const App = () => {
 
   return (
     <>
+      <CustomCursor/>
       <Navbar />
       <Hero />
       <About />

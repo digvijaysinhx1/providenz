@@ -1,0 +1,21 @@
+.cursor-dot {
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  mix-blend-mode: difference;
+  will-change: transform;
+  transition: width 0.2s, height 0.2s, top 0.2s, left 0.2s;
+}
+
+.cursor-dot.cursor-hover {
+  width: 14px;
+  height: 14px;
+  top: -7px;
+  left: -7px;
+}
