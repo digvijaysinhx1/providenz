@@ -78,7 +78,7 @@ const About = () => {
           zIndex: 0,
         }}
       >
-        <img src={cube} alt="" style={{ width: '100%', height: 'auto', filter: 'drop-shadow(0 0 40px rgba(255, 73, 37, 0.8))' }} />
+        <img src={cube} alt="" loading='lazy' style={{ width: '100%', height: 'auto', filter: 'drop-shadow(0 0 40px rgba(255, 73, 37, 0.8))' }} />
       </div>
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
