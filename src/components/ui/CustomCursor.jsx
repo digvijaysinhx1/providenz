@@ -1,13 +1,20 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./CustomCursor.css";
 
 const CustomCursor = () => {
   const dotRef = useRef(null);
+  const [isTouch, setIsTouch] = useState(false);
 
   useEffect(() => {
+    // Hide on touch/mobile devices
+    if (window.matchMedia("(pointer: coarse)").matches) {
+      setIsTouch(true);
+      return;
+    }
+
     let mouseX = 0, mouseY = 0;
     let dotX = 0, dotY = 0;
-    const dotSpeed = 0.10; // dot follows faster
+    const dotSpeed = 0.25;
 
     const onMouseMove = (e) => {
       mouseX = e.clientX;
@@ -27,12 +34,8 @@ const CustomCursor = () => {
 
     animate();
 
-    const onMouseEnterLink = () => {
-      dotRef.current?.classList.add("cursor-hover");
-    };
-    const onMouseLeaveLink = () => {
-      dotRef.current?.classList.remove("cursor-hover");
-    };
+    const onMouseEnterLink = () => dotRef.current?.classList.add("cursor-hover");
+    const onMouseLeaveLink = () => dotRef.current?.classList.remove("cursor-hover");
 
     window.addEventListener("mousemove", onMouseMove);
 
@@ -53,11 +56,9 @@ const CustomCursor = () => {
     };
   }, []);
 
-  return (
-    <>
-      <div className="cursor-dot" ref={dotRef} />
-    </>
-  );
+  if (isTouch) return null;
+
+  return <div className="cursor-dot" ref={dotRef} />;
 };
 
 export default CustomCursor;
