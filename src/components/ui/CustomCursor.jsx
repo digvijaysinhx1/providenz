@@ -14,7 +14,7 @@ const CustomCursor = () => {
 
     let mouseX = 0, mouseY = 0;
     let dotX = 0, dotY = 0;
-    const dotSpeed = 0.25;
+    const dotSpeed = 0.10;
 
     const onMouseMove = (e) => {
       mouseX = e.clientX;
